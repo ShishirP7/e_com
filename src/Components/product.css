@@ -10,9 +10,10 @@
   display: flex;
   justify-content: space-around;
   margin: 10px 0 10px 0;
-
-  background-color: rgb(255, 255, 255);
+  width: 100%;
 }
+
+
 #headerCart {
   display: flex;
   flex-direction: row;
@@ -20,24 +21,44 @@
   width: 200px;
 }
 
-#headerCart-font1 {
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
 #headerCart-font {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: bold;
 }
 
 #body {
-  background-image: url(../Images/backgroundx2.png);
+  background: url(../Images/backgroundx2.png) center fixed;
   background-size: cover;
-
+  width: 100%;
+display: flex;
+align-items: left;
+justify-content: center;
   height: 550px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  overflow: hidden;
+}
+
+#body  div{
+  position: relative;
+ left: 200px;
+  color: white;
+
+}
+#headline1{
+font-size: 40px;
+font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+  #header {
+    width: 500px;
+  }
+  #body {
+   
+   ;
+  }
 }
 #addbuttoncont {
   display: flex;
@@ -62,27 +83,13 @@
 
   border: none;
 }
-#headline1 {
-  margin-left: 300px;
-  font-family: sans-serif;
-  color: white;
-  font-size: 45px;
-  margin-top: 150px;
-  margin-bottom: 10px;
-}
-#line1 {
-  margin-left: 300px;
-  font-family: sans-serif;
-  color: white;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
+
 #headline2 {
   text-align: center;
   font-weight: bold;
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  top: 949px;
+
 }
 #productsection {
   display: flex;
@@ -184,8 +191,6 @@
   color: white;
   height: 50px;
   padding-top: 24px;
-  
-  
 }
 
 #cartitem {

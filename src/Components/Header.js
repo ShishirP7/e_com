@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Images/logo2.png";
 import Cart from "../Images/cart.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./product.css";
 import {
   BrowserRouter as Router,
@@ -30,12 +31,15 @@ export default function Header(props) {
               
             <Link id="link" to="/cart">
               <div id="headerCart-font">Shopping Cart</div>
-              <span id="headerCart-font1">Rs. {overallPrice}</span>
+              <span id="headerCart-font">Rs. {overallPrice}</span>
               </Link>
             </div>
           </div>
         </div>
       </div>
     </header>
-  );
+)
+
+ 
+
 }

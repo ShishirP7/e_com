@@ -7,6 +7,14 @@ import { useState } from "react";
 function App() {
   const { products } = data;
 
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 620,
+      behavior: "smooth",
+    });
+  };
+
   const [cartItems, setCartItems] = useState([]);
 
   const TotalPrice = cartItems.reduce(
@@ -75,6 +83,7 @@ function App() {
               addtocart={addtocart}
               cartItems={cartItems}
               overallPrice={overallPrice}
+              scrollUp={scrollUp}
             ></Home>
           </Route>
 

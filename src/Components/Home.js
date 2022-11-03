@@ -8,22 +8,25 @@ import {
 import Header from "./Header";
 import Copyright from "./copyright";
 export default function Home(props) {
-  const { products, addtocart, cartItems,overallPrice } = props;
+  const { products, addtocart, cartItems,overallPrice,scrollUp} = props;
 
   return (
 
     <div>
       <Header overallPrice={overallPrice}></Header>
       <div id="body">
+        <div >
         <p id="headline1">
-          Summer Accessories <br />
+          Summer Accessories<br/>
           Super Sale
         </p>
         <p id="line1">
           Great deals on brands like Samsung,Apple ,Beats and Many More
         </p>
-        <button id="btnshop">Shop Now</button>
+        <button onClick={scrollUp} id="btnshop">Shop Now</button>
       </div>
+        </div>
+        
       <div id="headline2">
       <p > Our Products</p>
       </div>
